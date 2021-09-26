@@ -63,7 +63,7 @@ main {
 }
 
 .menu-mobile {
-    display: block;
+    display: none;
 }
 
 .icone-fechar-menu-mobile {
