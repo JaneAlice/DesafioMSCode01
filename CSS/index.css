@@ -1,64 +1,42 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 main {
-    background-color: rgba(27,71,161,0.8);
     width: 100%;
-    height: 414px;
+    height: 514px;
+    position: absolute;
+    top: 0px;
 }
 
 .btn-header {
-    border-radius: 50px !important;
-    height: 40px;
-    width: 120px;
     font-weight: bold;
-    color: white !important;
-    text-align: center;
-    margin-left: 5px;
-    margin-right: -15px;
+    border-radius: 50px;
+    padding: 7px 21px 7px 21px;
+    margin-left: 15px;
+    margin-right: -10px;
+    background-color: #2a81ea;
+    color: white;
 }
 
-.link-header {
+
+.link-menu{
     text-decoration: none !important;
-    color: #50658e !important;
-    padding-left: 18px;
-    padding-right: 18px;
+    color: #50658e;
+    padding: 0px 18px;
     font-size: 0.95em;
+    font-weight: 500;
 }
 
-.link-header:hover{
-    color: #2a81ea !important;
+.link-menu:hover {
+    color: #2a81ea;
 }
 
-.texto-azul {
-    color: #2a81ea !important;
-}
-
-.padding-header {
+.padding-menu {
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
-.fa-bars {
-    font-size: 1.3em;
-    margin-top: 12px;
-    color: #50658e !important;
-}
-
-.logo-menu {
-    text-align: left;
-}
-
-.bg-menu-responsivo {
-    background-color: rgba(27,71,161,0.8);
-    opacity: 1;
-}
-
-.mt-menu-responsivo {
-    margin-top: -100px;
-}
-
-.display-none {
+.menu-monitor {
     display: none;
 }
 
@@ -66,235 +44,494 @@ main {
     display: none;
 }
 
-.icone-fechar-menu-mobile {
-    width: 36px;
-    height: 36px;
-    color: rgba(27,71,161,0.8);
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 100%;
-    padding-top: 5px;
-    padding-left: 12px;
-    font-size: 18px;
+.fa-bars {
+    color: #50658e;
+    font-size: 19px;
+    margin-top: 10px;
 }
 
-.div-menu-responsivo{
+.bg-corona-home{
+    background-image: url(http://demo.themenio.com/kovid19/assets/images/shape-a.png);
+    background-position: center;
+    background-size: contain;
+    height: 730px;
+    margin-top: -70px;
+    background-repeat: no-repeat;
+}
+
+.bg-menu-mobile{
+    background-color: rgba(27,71,161,0.8);
+}
+
+.links-menu-mobile {
+    padding: 32px 7px;
     width: 260px;
     height: 100%;
-    position: fixed;
-    padding-top: 32px;
-    padding-left: 6px;
 }
 
-@media (max-width: 320px) {
+.fa-times {
+    color: #50658e;
+    background: rgba(255,255,255,0.8);
+    width: 36px;
+    border-radius: 100%;
+    height: 36px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
 
-    .icone-menu-mobile {
-        display: block !important;
+.btn-abrir-menu-mobile {
+    display: block;
+    cursor: pointer;
+}
+
+.pt-home{
+    padding-top: 100px;
+}
+
+.titulo-home {
+    font-family: 'Oswald', sans-serif;
+    color:  #50658e;
+    font-size: 4.5em;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.titulo-sm-vermelho {
+    color: #f86168;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.titulo-sm-azul {    
+    color: #50658e;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    font-size: 2.6em;
+    margin-top: -32px;
+    letter-spacing: -3px;
+}
+
+.descricao-home {
+    color: #3D4B69;
+}
+
+.btn-home {
+    border-radius: 50px;
+    padding: 10px 30px 11px 30px;
+    margin-top: 15px;
+    background-color: #2a81ea;
+    color: white;
+}
+
+.h6-home {
+    color: #7d92bb;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 55px;
+    letter-spacing: 1px;
+}
+.numeros-home {
+    color: #465675;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.7em;
+    margin-top: -10px;
+}
+
+.horario-home {
+    color: #7d92bb;
+    font-size: 0.75em;
+    margin-top: 20px;
+}
+
+.btn-about {
+    padding-top: 25px;
+}
+
+.d1-home {
+    order: 1;
+}
+
+.d2-home {
+    order: 0;
+    height: 445px;
+}
+
+@media (max-width: 330px) {
+
+    .btn-fechar-menu-mobile {
+        position: absolute;
+        right: 5px;
+        top: 32px;
+    }
+    .imagem-sintomas-home {
+        position: unset !important;
+        height: 100%px;
+        width: 100%;
+        margin-top: unset !important;
     }
 
-    .menu-monitor {
-        display: none !important;
+    .display-flex {
+        display: inline-block;
     }
 
-    .btn-header {
-        margin-left: 18px;
-        margin-top: 8px;
-        height: 36px;
-        width: 106px;
+    .d2-home {
+        height: 350px;
+    }
+
+    .titulo-home {
+        font-size: 3.45em;
+        margin-right: -28px;
+    }
+
+    .titulo-sm-vermelho {
+        font-size: 1.1em;
+        letter-spacing: 0px;
+        margin-top: 14px;
+        padding-left: 3px;
+    }
+
+    .titulo-sm-azul {
+        font-size: 1.87em;
+        margin-top: -25px;
+        letter-spacing: -1px;
+        padding-left: 3px;
+    }
+
+    .btn-home {
+        padding: 10px 20px 10px 20px;
         font-size: 0.8em;
     }
-    .menu-responsivo {
-        height: 100%;
-        position: absolute;
-        top: 0px;
+
+    .btn-about {
+        font-size: 0.8em;
+        text-align: right;
     }
 
-    .icone-fechar-menu-mobile {
+    .h6-home {
+        letter-spacing: 0px;
+        font-size: 0.8em;
+        margin-top: 25px;
+    }
+    .numeros-home {
+        font-size: 1.5em;
+    }
+
+    .bg-corona-home{
+        height: 940px;
+    }
+}
+
+@media (max-width: 425px) and (min-width:  331px) {
+
+    .imagem-logo {
+        margin-left: 5px;
+    }
+    .fa-bars {
+        margin-right: 5px;
+    }
+
+    .btn-fechar-menu-mobile {
         position: absolute;
         right: 10px;
-        top: 30px;
-    }
-}
-
-@media (max-width: 425px) and (min-width:  321px) {
-
-    .menu-monitor {
-        display: none !important;
+        top: 32px;
     }
 
-    .icone-menu-mobile {
-        display: block !important;
-        text-align: right !important;
-        padding-right: 10px;
+    .imagem-sintomas-home {
+        position: unset !important;
+        height: 240px;
+        margin-top: unset !important;
     }
 
-    .logo-menu {
-        text-align: left !important;
-        padding-left: 20px;
+    .display-flex {
+        display: inline-block;
     }
 
-    .fa-bars {
-        font-size: 1.15em;
+    .d2-home {
+        height: 350px;
     }
 
-    .btn-header {
-        margin-left: 18px;
-        margin-top: 8px;
-        height: 36px;
-        width: 106px;
+    .titulo-home {
+        font-size: 3.45em;
+        margin-right: -28px;
+    }
+
+    .titulo-sm-vermelho {
+        font-size: 1.1em;
+        letter-spacing: 0px;
+        margin-top: 14px;
+        padding-left: 3px;
+    }
+
+    .titulo-sm-azul {
+        font-size: 1.87em;
+        margin-top: -25px;
+        letter-spacing: -1px;
+        padding-left: 3px;
+    }
+
+    .btn-home {
+        padding: 10px 20px 10px 20px;
         font-size: 0.8em;
     }
-    .menu-responsivo {
-        height: 100%;
-        position: absolute;
-        top: 0px;
+
+    .btn-about {
+        font-size: 0.8em;
+        text-align: center;
     }
 
-    .icone-fechar-menu-mobile {
-        position: absolute;
-        right: 20px;
-        top: 30px;
+    .h6-home {
+        letter-spacing: 0px;
+        font-size: 0.8em;
+        margin-top: 25px;
     }
-}
-
-@media (max-width: 576px) and (min-width:  426px) {
-
-    .menu-monitor {
-        display: none !important;
+    .numeros-home {
+        font-size: 1.5em;
     }
 
-    .icone-menu-mobile {
-        display: block !important;
-        text-align: center !important;
-        padding-left: 80px;
-    }
-
-    .logo-menu {
-        text-align: center !important;
-        padding-left: 65px;
-    }
-
-    .fa-bars {
-        font-size: 1.15em;
-    }
-
-    .btn-header {
-        margin-left: 18px;
-        margin-top: 8px;
-    }
-    .menu-responsivo {
-        height: 100%;
-        position: absolute;
-        top: 0px;
-    }
-
-    .icone-fechar-menu-mobile {
-        position: absolute;
-        right: 30px;
-        top: 30px;
+    .bg-corona-home{
+        height: 940px;
     }
 }
 
-@media (max-width: 768px) and (min-width: 577px) {
+@media (max-width: 575px) and (min-width:  426px) {
 
-    .icone-menu-mobile {
-        display: block !important;
-    }
-
-    .menu-monitor {
-        display: none !important;
-    }
-
-    .btn-header {
-        margin-left: 18px;
-        margin-top: 8px;
-    }
-    .menu-responsivo {
-        height: 100%;
+    .btn-fechar-menu-mobile {
         position: absolute;
-        top: 0px;
+        right: 22px;
+        top: 32px;
     }
 
-    .icone-fechar-menu-mobile {
-        position: absolute;
-        right: 30px;
-        top: 30px;
+    .imagem-sintomas-home {
+        position: unset !important;
+        height: 325px;
+        margin-top: unset !important;
     }
 
+    .d2-home {
+        height: 350px;
+    }
+    .titulo-home {
+        margin-right: -28px;
+    }
+
+    .container-mobile{
+        max-width: 414px;
+    }
+
+    .titulo-home {
+        font-size: 3.45em;
+    }
+
+    .titulo-sm-vermelho {
+        font-size: 1.1em;
+        letter-spacing: 0px;
+        margin-top: 14px;
+        padding-left: 3px;
+    }
+
+    .titulo-sm-azul {
+        font-size: 1.87em;
+        margin-top: -25px;
+        letter-spacing: -1px;
+        padding-left: 3px;
+    }
+
+    .btn-home {
+        padding: 10px 20px 10px 20px;
+        font-size: 0.8em;
+    }
+
+    .btn-about {
+        font-size: 0.8em;
+    }
+
+    .h6-home {
+        letter-spacing: 0px;
+        font-size: 0.8em;
+        margin-top: 25px;
+    }
+    .numeros-home {
+        font-size: 1.5em;
+    }
+
+    .bg-corona-home{
+        height: 940px;
+    }
 }
 
-@media (max-width: 992px) and (min-width: 769px) {
-    .link-header {
-        padding-left: 10px;
-        padding-right: 10px;
+@media (max-width: 768px) and (min-width: 576px) {
+
+    .pt-md-bg-corona {
+        padding-top: 0px;
     }
 
-    .pl-20 {
-        padding-left: 20px;
-    }
-
-    .icone-menu-mobile {
-        display: block !important;
-    }
-
-    .menu-monitor {
-        display: none !important;
-    }
-
-    .btn-header {
-        margin-left: 10px;
-        margin-top: 8px;
-    }
-    .menu-responsivo {
-        height: 100%;
+    .btn-fechar-menu-mobile {
         position: absolute;
-        top: 0px;
+        right: 28px;
+        top: 32px;
     }
 
-    .div-menu-responsivo{
-        padding-top: 32px;
-        padding-left: 14px;
+    .imagem-sintomas-home {
+        position: unset !important;
+        height: 340px;
+        margin-top: 50px;
     }
 
-    .icone-fechar-menu-mobile {
-        position: absolute;
-        right: 80px;
-        top: 34px;
+    .pt-home{
+        padding-top: 55px;
+    }
+
+    .bg-corona-home{
+        height: 960px;
+    }
+
+    .titulo-home{
+        margin-right: -28px !important;
     }
     
 }
-@media (max-width: 1200px) and (min-width: 993px) {
-    .link-header {
-        padding-left: 10px;
-        padding-right: 10px;
+
+@media (max-width: 991px) and (min-width: 769px) {
+
+    .pt-md-bg-corona {
+        padding-top: 0px;
     }
 
-    .menu-mobile {
-        display: none;
+    .btn-header {
+        margin-top: 8px;
+        margin-left: 17px;
+    }
+       
+    .btn-fechar-menu-mobile {
+        position: absolute;
+        right: 62px;
+        top: 32px;
     }
 
-    .icone-menu-mobile {
-        display: none !important;
+    .imagem-sintomas-home {
+        position: unset !important;
+        height: 340px;
+        margin-top: 50px;
     }
 
-    .menu-monitor {
-        display: block !important;
+    .pt-home{
+        padding-top: 50px;
+    }
+
+    .bg-corona-home{
+        height: 960px;
     }
 }
 
-@media (min-width: 1201px) {
-    .btn-header {
-        margin-left: 15px;
+@media (max-width: 1200px) and (min-width: 992px) {
+    
+    .link-menu{
+        padding: 0px 9px;
     }
-
-    .menu-mobile {
-        display: none;
-    }
-
-    .icone-menu-mobile {
-        display: none !important;
-    }
-
+    
     .menu-monitor {
         display: block !important;
     }
-  }
+
+    .btn-abrir-menu-mobile {
+        display: none !important;
+    }
+
+    .bg-corona-home{
+        margin-top: -120px;
+    }
+
+    .btn-abrir-menu-mobile {
+        display: none !important;
+    }
+
+    .imagem-sintomas-home {
+        position: absolute;
+        top: 72px;
+        right: -24px;
+        height: 460px;
+    }
+
+    .mt-titulo-home {
+        margin-top: 80px;
+    }
+
+    .d1-home {
+        order: 0;
+    }
+    
+    .d2-home {
+        order: 1;
+        height: 445px;
+    }
+    .h6-home {
+        font-size: 0.78em;
+    }
+    
+}
+
+@media (min-width: 1201px) {
+   
+    .menu-monitor {
+        display: block !important;
+    }
+
+    .btn-abrir-menu-mobile {
+        display: none !important;
+    }
+
+    .imagem-sintomas-home {
+        position: absolute;
+        top: 35px;
+        right: -45px;
+        height: 540px;
+    }
+
+    .mt-titulo-home {
+        margin-top: 70px;
+    }
+
+    .btn-about {
+        padding-top: 37px;
+    }
+    .h6-home {
+        margin-top: 80px;
+        font-size: 0.78em;
+    }
+
+    .btn-home {
+        margin-top: 25px;
+    }
+
+    .numeros-home {
+        margin-top: unset !important;
+        font-size: 1.8em;
+    }
+
+    .titulo-sm-vermelho {
+        font-size: 1.8em;
+    }
+
+    .titulo-sm-azul {
+        font-size: 2.95em;
+        margin-top: -36px;
+        letter-spacing: -1px;
+    }
+    .titulo-home {
+        font-size: 5.2em;
+    }
+
+    .d1-home {
+        order: 0;
+    }
+    
+    .d2-home {
+        order: 1;
+    }
+}

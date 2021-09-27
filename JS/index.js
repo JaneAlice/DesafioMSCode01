@@ -1,10 +1,10 @@
 //Abrindo e fechando menu no responsivo
 
-var menu_aberto_aberto = 0;
+var menu_aberto = 0;
 
-$('#botao_abrir_menu_mobile').on('click', function(e){
+$('#btn_abrir_menu_mobile').on('click', function(e){
     
-	if(menu_aberto_aberto == 0){
+	if(menu_aberto == 0){
 		abrirMenu();
 	}else{
 		fecharMenu();
@@ -12,9 +12,9 @@ $('#botao_abrir_menu_mobile').on('click', function(e){
 	
 });
 
-$('#icone_fechar_menu_mobile').on('click', function(e){
+$('#btn_fechar_menu_mobile').on('click', function(e){
     
-	if(menu_aberto_aberto == 0){
+	if(menu_aberto == 0){
 		abrirMenu();
 	}else{
 		fecharMenu();
@@ -24,12 +24,12 @@ $('#icone_fechar_menu_mobile').on('click', function(e){
 
 function abrirMenu(){
 	$('#menu_mobile').show(500);
-	$('#botao_abrir_menu_mobile').addClass('botao-menu-mobile-ativo');
-	menu_aberto_aberto = 1;
+	$('#btn_abrir_menu_mobile').addClass('botao-menu-mobile-ativo');
+	menu_aberto = 1;
 }
 
 function fecharMenu(){
 	$('#menu_mobile').hide(500);
-	$('#icone_fechar_menu_mobile').removeClass('botao-menu-mobile-ativo');
-	menu_aberto_aberto = 0;
+	$('#btn_fechar_menu_mobile').removeClass('botao-menu-mobile-ativo');
+	menu_aberto = 0;
 }

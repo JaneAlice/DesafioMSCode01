@@ -15,63 +15,115 @@
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
 
-        <header class="bg-light">
-            <div class="container padding-header display-block">
-                <div class="row">
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-6 logo-menu">
-                        <a href="index.html">
-                            <img src="http://demo.themenio.com/kovid19/images/logo-dark.png">
-                        </a>
-                    </div>
-                    <div class=" col-lg-10 col-md-6 col-sm-6 col-6 text-right pl-20">
-                        <div class="menu-monitor">
-                            <a href="#" class="link-header texto-azul">Home</a>
-                            <a href="#" class="link-header">About Corona</a>
-                            <a href="#" class="link-header">Symptoms</a>
-                            <a href="#" class="link-header">Prevention</a>
-                            <a href="#" class="link-header">Treatment</a>
-                            <a href="#" class="link-header">FAQ</a>
-                            <a href="#" class="link-header">News</a>
-                            <a href="#" class="link-header">More</a>
-                            <a href="#">
-                                <button class="btn btn-primary btn-header" type="submit">Do & Don’t</button>
-                            </a>
+        <header class="position-relative">
+            <div class="bg-light">
+                <div class="container container-mobile">
+                    <div class="row padding-menu">
+                        <div class="col-lg-2 col-md-6 col-6">
+                            <img class="imagem-logo" src="http://demo.themenio.com/kovid19/images/logo-dark.png"/>
                         </div>
-                        <div  class="icone-menu-mobile">
-                            <a id="botao_abrir_menu_mobile">
-                                <i class="fas fa-bars"></i>
-                            </a>
+                        <div class="col-lg-10 col-md-6 col-6 text-lg-right">
+                            <div class="menu-monitor">
+                                <a href="#" class="link-menu">Home</a>
+                                <a href="#" class="link-menu">About Corona</a>
+                                <a href="#" class="link-menu">Symptoms</a>
+                                <a href="#" class="link-menu">Prevention</a>
+                                <a href="#" class="link-menu">Treatment</a>
+                                <a href="#" class="link-menu">FAQ</a>
+                                <a href="#" class="link-menu">News</a>
+                                <a href="#" class="link-menu">More</a>
+                                <a>
+                                    <button class="btn btn-header" type="submit">Do & Don’t</button>
+                                </a>
+                            </div>
+                            <div class="btn-abrir-menu-mobile text-right">
+                                <a href="#" id="btn_abrir_menu_mobile">
+                                    <i class="fas fa-bars"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light pt-md-bg-corona">
+                <div class="bg-corona-home">
+                    <div class="container container-mobile pt-home">
+                        <div class="row position-relative">
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-12 d1-home">
+                                <div class="row mt-titulo-home">
+                                    <div class="col-lg-6 col-md-4 col-sm-6 col-6 titulo-home">CORONA</div>
+                                    <div class="col-lg-6 col-md-8 col-sm-6 col-6">
+                                        <p class="titulo-sm-vermelho">COVID-19</p>
+                                        <p class="titulo-sm-azul">VIRUS</p>
+                                    </div>
+                                </div>
+                                <p class="descricao-home">The Coronavirus (COVID-19) was first reported in Wuhan, Hubei, China in December 2019, the outbreak was later recognized as a pandemic by the World Health Organization (WHO) on 11 March 2020.</p>
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-4 col-sm-5 col-5">
+                                        <button class="btn btn-home" type="submit">
+                                            <b>How to Protect</b>
+                                            <i class="fas fa-shield-alt ml-2"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-7 col-md-8 col-sm-7 col-7 btn-about text-xl-left text-lg-center">
+                                        <a href="#" class="text-primary">
+                                            <b>About COVID-19</b>
+                                            <i class="fas fa-arrow-right ml-2"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                        <h6 class="h6-home">WORLDWIDE CASES</h6>
+                                        <div class="numeros-home">232,156,121</div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                        <h6 class="h6-home">DEATHS</h6>
+                                        <div class="numeros-home">4,754,837</div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                        <h6 class="h6-home">RECOVERED</h6>
+                                        <div class="numeros-home">207,048,458</div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <p class="horario-home"><i>* Last updated: Sep 25, 2021, 09:05 PM America/Chicago</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-12 d2-home text-center">
+                                <img class="imagem-sintomas-home" src="http://demo.themenio.com/kovid19/images/gfx/header-a.png"/>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <section class="menu-mobile" id="menu_mobile">
-            <main class="bg-menu-responsivo menu-responsivo" id="bg_menu_mobile">
-            </main>
-            <div class="position-relative mt-menu-responsivo">
-                <div class="bg-white div-menu-responsivo" id="links_menu_mobile">
-                    <p><a href="#" class="link-header texto-azul">Home</a></p>
-                    <p><a href="#" class="link-header">About Corona</a></p>
-                    <p><a href="#" class="link-header">Symptoms</a></p>
-                    <p><a href="#" class="link-header">Prevention</a></p>
-                    <p><a href="#" class="link-header">Treatment</a></p>
-                    <p><a href="#" class="link-header">FAQ</a></p>
-                    <p><a href="#" class="link-header">News</a></p>
-                    <p><a href="#" class="link-header">More</a></p>
-                    <a href="#">
-                        <button class="btn btn-primary btn-header" type="submit">Do & Don’t</button>
+            <main class="bg-menu-mobile">
+                <div class="bg-white links-menu-mobile position-relative">
+                    <p><a href="#" class="link-menu">Home</a></p>
+                    <p><a href="#" class="link-menu">About Corona</a></p>
+                    <p><a href="#" class="link-menu">Symptoms</a></p>
+                    <p><a href="#" class="link-menu">Prevention</a></p>
+                    <p><a href="#" class="link-menu">Treatment</a></p>
+                    <p><a href="#" class="link-menu">FAQ</a></p>
+                    <p><a href="#" class="link-menu">News</a></p>
+                    <p><a href="#" class="link-menu">More</a></p>
+                    <a>
+                        <button class="btn btn-header" type="submit">Do & Don’t</button>
                     </a>
                 </div>
-                <div class="icone-fechar-menu-mobile" id="icone_fechar_menu_mobile">
-                    <i class="fas fa-times"></i>
+                <div class="btn-fechar-menu-mobile">
+                    <a href="#" id="btn_fechar_menu_mobile">
+                        <i class="fas fa-times"></i>
+                    </a>
                 </div>
-            </div>
+            </main>
         </section>
+        
+       
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
