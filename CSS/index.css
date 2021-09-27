@@ -134,6 +134,7 @@ main {
     margin-top: 55px;
     letter-spacing: 1px;
 }
+
 .numeros-home {
     color: #465675;
     font-family: 'Oswald', sans-serif;
@@ -162,6 +163,65 @@ main {
     height: 445px;
 }
 
+.subtitulo-about {
+    margin-top: 110px;
+    color: #2a81ea;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.titulo-about {
+    color: #50658e;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.35em;
+    font-weight: 700;
+    margin-top: -7px;
+}
+
+.descricao-about-1 {
+    font-size: 1.2em !important;
+    color: #3d4b69;
+    margin-top: 30px;
+}
+
+.descricao-about-2 {
+    color: #3d4b69;
+    font-size: 0.92em;
+}
+
+.titulo-card-about {
+    font-size: 1.3em;
+    color: #465675;
+    padding: 5px 7px 2px 7px;
+}
+
+.texto-card-about {
+    font-size: 1em;
+    text-decoration: none !important;
+    padding-left: 24px;
+    color: #2a81ea;
+}
+
+.fa-arrow-right {
+    color: #2a81ea;
+    font-size: 0.7em;
+}
+
+.decoration-none {
+    text-decoration: none !important;
+}
+
+.list-group-item {
+    padding: 17px 30px 17px 30px !important; 
+}
+
+.card-about {
+    margin-left: 90px;
+    margin-top: 105px;
+    margin-bottom: 80px;
+}
+
 @media (max-width: 330px) {
 
     .btn-fechar-menu-mobile {
@@ -169,6 +229,7 @@ main {
         right: 5px;
         top: 32px;
     }
+
     .imagem-sintomas-home {
         position: unset !important;
         height: 100%px;
@@ -218,6 +279,7 @@ main {
         font-size: 0.8em;
         margin-top: 25px;
     }
+
     .numeros-home {
         font-size: 1.5em;
     }
@@ -232,6 +294,7 @@ main {
     .imagem-logo {
         margin-left: 5px;
     }
+
     .fa-bars {
         margin-right: 5px;
     }
@@ -290,6 +353,7 @@ main {
         font-size: 0.8em;
         margin-top: 25px;
     }
+
     .numeros-home {
         font-size: 1.5em;
     }
@@ -316,6 +380,7 @@ main {
     .d2-home {
         height: 350px;
     }
+
     .titulo-home {
         margin-right: -28px;
     }
@@ -470,6 +535,7 @@ main {
         order: 1;
         height: 445px;
     }
+
     .h6-home {
         font-size: 0.78em;
     }
@@ -500,6 +566,7 @@ main {
     .btn-about {
         padding-top: 37px;
     }
+
     .h6-home {
         margin-top: 80px;
         font-size: 0.78em;
@@ -523,6 +590,7 @@ main {
         margin-top: -36px;
         letter-spacing: -1px;
     }
+
     .titulo-home {
         font-size: 5.2em;
     }
