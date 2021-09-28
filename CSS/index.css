@@ -163,7 +163,7 @@ main {
     height: 445px;
 }
 
-.subtitulo-about {
+.subtitulo-sections {
     margin-top: 110px;
     color: #2a81ea;
     letter-spacing: 1px;
@@ -171,7 +171,7 @@ main {
     font-weight: 600;
 }
 
-.titulo-about {
+.titulo-sections {
     color: #50658e;
     font-family: 'Oswald', sans-serif;
     font-size: 2.35em;
@@ -185,9 +185,9 @@ main {
     margin-top: 30px;
 }
 
-.descricao-about-2 {
+.descricao-sections {
     color: #3d4b69;
-    font-size: 0.92em;
+    font-size: 1em;
 }
 
 .titulo-card-about {
@@ -222,6 +222,34 @@ main {
     margin-bottom: 80px;
     width: 350px;
     box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%); 
+}
+
+.card-transmissao {
+    border: unset !important;
+    box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%); 
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.borda-imagem-transmissao {
+    border-bottom: 6px solid #9cc2f7;
+    margin-top: -2px;
+}
+
+.titulo-card-transmissao {
+    color: #2a81ea;
+    letter-spacing: -0.5px;
+    font-size: 1.25em;
+}
+
+.btn-transmissao {
+    background-color: #2a81ea;
+    padding: 11px 28px 11px 28px;
+    border-radius: 50px;
+    margin-bottom: 90px;
 }
 
 @media (max-width: 330px) {
@@ -287,20 +315,37 @@ main {
     }
 
     .bg-corona-home{
-        height: 940px;
+        height: 1000px;
     }
 
     .card-about {
         margin-left: unset !important;
         margin-top: 20px;
         margin-bottom: 50px;
-        width: 290px;
+        width: auto;
     }
-
 
     .list-group-item {
         padding: 19px 12px 19px 12px !important; 
     }
+
+    .subtitulo-sections {
+        margin-top: 50px;
+    }
+
+   .btn-transmissao {
+    padding: 8px 20px 8px 20px;
+    margin-top: 15px;
+    margin-bottom: 70px;
+    font-size: 0.8em;
+}
+
+.card-transmissao {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: auto;
+}
+
 }
 
 @media (max-width: 425px) and (min-width:  331px) {
@@ -380,11 +425,30 @@ main {
         margin-left: unset !important;
         margin-top: 20px;
         margin-bottom: 50px;
-        width: 385px;
+        width: auto;
     }
 
     .list-group-item {
         padding: 19px 12px 19px 12px !important; 
+    }
+
+
+    .fonte-subtitulo-transmissao {
+       font-size: 0.8em !important;
+       margin-top: 30px !important;
+   }
+
+   .card-transmissao {
+       margin-top: 15px;
+       margin-bottom: 15px;
+       width: auto;
+   }
+
+   .btn-transmissao {
+       padding: 8px 20px 8px 20px;
+       margin-top: 30px;
+       margin-bottom: 50px;
+       font-size: 0.8em;
     }
 }
 
@@ -464,11 +528,25 @@ main {
     .descricao-about-1 {
         font-size: 1.18em;
     }
-    
-    .descricao-about-2 {
-        font-size: 1em;
+
+
+     .fonte-subtitulo-transmissao {
+        font-size: 0.8em !important;
+        margin-top: 30px !important;
     }
 
+    .card-transmissao {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 385px !important;
+    }
+
+    .btn-transmissao {
+        padding: 8px 20px 8px 20px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 0.8em;
+    }
 
 }
 
@@ -503,7 +581,7 @@ main {
     }
 
 
-    .subtitulo-about {
+    .subtitulo-sections {
         margin-top: 80px;
     }
 
@@ -518,8 +596,14 @@ main {
         font-size: 1.18em;
     }
 
-    .descricao-about-2 {
-        font-size: 1em;
+    .card-transmissao {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 420px !important;
+    }
+
+    .btn-transmissao {
+        margin-top: 40px;
     }
     
 }
@@ -565,12 +649,18 @@ main {
         padding: 18px 24px 18px 24px !important; 
     }
 
-    .titulo-about {
+    .titulo-sections {
         font-size: 2.4em;
     }
     
-    .descricao-about-2 {
+    .descricao-sections {
         font-size: 0.98em;
+    }
+
+    .card-transmissao {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 450px !important;
     }
 }
 
@@ -624,7 +714,7 @@ main {
         margin-left: 23px;
     }
 
-    .titulo-about {
+    .titulo-sections {
         font-size: 2.4em;
     }
 
@@ -632,7 +722,7 @@ main {
         font-size: 1.23em !important;
     }
 
-    .descricao-about-2 {
+    .descricao-sections {
         font-size: 0.98em;
     }
     
