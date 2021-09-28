@@ -19,6 +19,9 @@ main {
     color: white;
 }
 
+.texto-azul{
+    color: #2a81ea;
+}
 
 .link-menu{
     text-decoration: none !important;
@@ -115,7 +118,7 @@ main {
     letter-spacing: -3px;
 }
 
-.descricao-home {
+.cor-descricao {
     color: #3D4B69;
 }
 
@@ -125,6 +128,7 @@ main {
     margin-top: 15px;
     background-color: #2a81ea;
     color: white;
+    width: 195px;
 }
 
 .h6-home {
@@ -170,6 +174,11 @@ main {
     font-size: 1.1em;
     font-weight: 600;
 }
+
+.fonte-subtitulo-about {
+    font-size: 1.1em !important;
+}
+
 
 .titulo-sections {
     color: #50658e;
@@ -245,11 +254,48 @@ main {
     font-size: 1.25em;
 }
 
-.btn-transmissao {
+.btn-sections {
     background-color: #2a81ea;
     padding: 11px 28px 11px 28px;
     border-radius: 50px;
     margin-bottom: 90px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.card-sintomas {
+    width: auto;
+    height: 218px;
+    border: unset !important;
+    position: relative;
+    box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%); 
+    margin-top: 50px;
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagem-sintomas {
+    border-radius: 100%;
+    position: absolute;
+    height: 80px;
+    right: 30px;
+    top: -40px;
+}
+
+.fa-exclamation-triangle {
+    position: absolute;
+    color: #7fb3f2;
+    font-size: 2.3em;
+    top: 18px;
+    left: 0px;
+}
+
+.imagem-prevencao {
+    border-radius: 100%;
+    height: 120px;
+    box-shadow: 0px 4px 35px 0px rgb(70 86 117 / 15%);
+    margin-bottom: 30px; 
 }
 
 @media (max-width: 330px) {
@@ -272,7 +318,7 @@ main {
     }
 
     .d2-home {
-        height: 350px;
+        height: 280px;
     }
 
     .titulo-home {
@@ -295,13 +341,19 @@ main {
     }
 
     .btn-home {
+        margin-top: unset !important;
+        width: auto;
         padding: 10px 20px 10px 20px;
         font-size: 0.8em;
+        margin-left: 5px;
+        margin-right: 10px;
     }
 
     .btn-about {
+        margin-top: unset !important;
         font-size: 0.8em;
-        text-align: right;
+        text-align: left;
+        margin-left: 10px;
     }
 
     .h6-home {
@@ -315,7 +367,7 @@ main {
     }
 
     .bg-corona-home{
-        height: 1000px;
+        height: 980px;
     }
 
     .card-about {
@@ -331,22 +383,59 @@ main {
 
     .subtitulo-sections {
         margin-top: 50px;
+        font-size: 0.75em;
     }
 
-   .btn-transmissao {
-    padding: 8px 20px 8px 20px;
+    .titulo-sections {
+        font-size: 2.28em;
+    }
+
+   .btn-sections {
+    padding: 9px 20px 9px 20px;
     margin-top: 15px;
     margin-bottom: 70px;
     font-size: 0.8em;
-}
-
-.card-transmissao {
-    margin-top: 15px;
-    margin-bottom: 15px;
     width: auto;
+    height: auto;
+    }
+    
+    .card-transmissao {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: auto;
+    }
+    
+    
+    .card-sintomas {
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 7px;
+    }
+    
+    .imagem-sintomas {
+        height: 60px;
+        right: 30px;
+        top: -30px;
+    }
+    
+    
+    .fa-exclamation-triangle {
+        font-size: 1.5em;
+        top: 7px;
+        left: 14px;
+    }
+    
+    .descricao-sections {
+        font-size: 0.96em;
+    }
+    .fa-exclamation-triangle {
+        font-size: 1.4em;
+        top: 7px;
+        left: 5px;
+    }
 }
 
-}
 
 @media (max-width: 425px) and (min-width:  331px) {
 
@@ -398,13 +487,14 @@ main {
     }
 
     .btn-home {
+        width: auto;
         padding: 10px 20px 10px 20px;
         font-size: 0.8em;
     }
 
     .btn-about {
         font-size: 0.8em;
-        text-align: center;
+        text-align: left;
     }
 
     .h6-home {
@@ -432,11 +522,10 @@ main {
         padding: 19px 12px 19px 12px !important; 
     }
 
-
-    .fonte-subtitulo-transmissao {
-       font-size: 0.8em !important;
-       margin-top: 30px !important;
-   }
+    .subtitulo-sections {
+        font-size: 0.8em;
+        margin-top: 30px;
+    }
 
    .card-transmissao {
        margin-top: 15px;
@@ -444,11 +533,35 @@ main {
        width: auto;
    }
 
-   .btn-transmissao {
+   .btn-sections {
        padding: 8px 20px 8px 20px;
        margin-top: 30px;
        margin-bottom: 50px;
        font-size: 0.8em;
+    }
+
+    .card-sintomas {
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 7px;
+    }
+
+    .imagem-sintomas {
+        height: 60px;
+        right: 30px;
+        top: -30px;
+    }
+
+    
+    .fa-exclamation-triangle {
+        font-size: 1.5em;
+        top: 7px;
+        left: 7px;
+    }
+
+    .descricao-sections {
+        font-size: 0.96em;
     }
 }
 
@@ -497,12 +610,14 @@ main {
     }
 
     .btn-home {
+        width: 152px;
         padding: 10px 20px 10px 20px;
         font-size: 0.8em;
     }
 
     .btn-about {
         font-size: 0.8em;
+        margin-left: -30px;
     }
 
     .h6-home {
@@ -530,9 +645,9 @@ main {
     }
 
 
-     .fonte-subtitulo-transmissao {
-        font-size: 0.8em !important;
-        margin-top: 30px !important;
+    .subtitulo-sections {
+        font-size: 0.8em;
+        margin-top: 30px;
     }
 
     .card-transmissao {
@@ -541,11 +656,24 @@ main {
         width: 385px !important;
     }
 
-    .btn-transmissao {
+    .btn-sections {
         padding: 8px 20px 8px 20px;
-        margin-top: 30px;
+        margin-top: 15px;
         margin-bottom: 50px;
         font-size: 0.8em;
+    }
+
+    .card-sintomas {
+        width: 384px;
+        height: 195px;
+        margin-top: 50px;
+        margin-bottom: 7px;
+    }
+
+    .imagem-sintomas {
+        height: 60px;
+        right: 30px;
+        top: -30px;
     }
 
 }
@@ -602,8 +730,14 @@ main {
         width: 420px !important;
     }
 
-    .btn-transmissao {
-        margin-top: 40px;
+    .btn-sections {
+        margin-top: 20px;
+    }
+
+    .card-sintomas {
+        width: 450px;
+        height: 180px;
+        margin-top: unset !important;
     }
     
 }
@@ -661,6 +795,12 @@ main {
         margin-top: 15px;
         margin-bottom: 15px;
         width: 450px !important;
+    }
+
+    .card-sintomas {
+        width: 450px;
+        height: 180px;
+        margin-top: unset !important;
     }
 }
 
