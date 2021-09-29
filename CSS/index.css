@@ -336,6 +336,14 @@ main {
     height: 440px;
 }
 
+.imagem-maos {
+    border-radius: 100%;
+    height: 100px;
+    box-shadow: 0px 4px 35px 0px rgb(70 86 117 / 15%);
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
 @media (max-width: 330px) {
 
     .btn-fechar-menu-mobile {
@@ -490,7 +498,7 @@ main {
     }
 
     .imagem-medidas-protecao {
-        height: 290px;
+        height: 280px;
         margin-top: 10px;
     }
 
@@ -787,6 +795,9 @@ main {
         font-size: 1.5em;
     }
 
+    .imagem-maos {
+        height: 100px;
+    }
 }
 
 @media (max-width: 767px) and (min-width: 576px) {
@@ -999,6 +1010,10 @@ main {
         height: 365px;
         margin-top: 100px;
     }
+
+    .imagem-maos {
+        height: 120px;
+    }
 }
 
 @media (min-width: 1201px) {
@@ -1060,5 +1075,9 @@ main {
     
     .d2-home {
         order: 1;
+    }
+
+    .imagem-maos {
+        height: 120px;
     }
 }
