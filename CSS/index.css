@@ -295,7 +295,7 @@ main {
     position: absolute;
     color: #7fb3f2;
     font-size: 2.3em;
-    top: 18px;
+    top: 10px;
     left: 0px;
 }
 
@@ -310,6 +310,30 @@ main {
     text-align: left;
     margin-top: 23px;
     padding-left: 35px;
+}
+
+.fa-check-circle {
+    color: #3dca93;
+    margin-right: 8px;
+    font-size: 1em;
+    position: absolute;
+    left: 5px;
+    margin-top: 3px;
+}
+
+.titulo-medidas-protecao {
+    color: #3d4b69;
+    font-size: 1.8em;
+    margin-left: -15px;
+}
+
+.box-medidas-protecao {
+    box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%); 
+    padding: 40px;
+    border-radius: 6px;
+}
+.imagem-medidas-protecao {
+    height: 440px;
 }
 
 @media (max-width: 330px) {
@@ -458,6 +482,21 @@ main {
         width: 200px;
         font-size: 0.7em;
     }
+
+    .box-medidas-protecao {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 15px;
+    }
+
+    .imagem-medidas-protecao {
+        height: 290px;
+        margin-top: 10px;
+    }
+
+    .titulo-medidas-protecao {
+        font-size: 1.4em !important;
+    }
 }
 
 
@@ -597,6 +636,20 @@ main {
         width: 220px;
         font-size: 0.8em;
     }
+
+    .imagem-medidas-protecao {
+        height: 300px;
+        margin-top: 10px;
+    }
+
+    .titulo-medidas-protecao {
+        font-size: 1.5em !important;
+    }
+
+    .box-medidas-protecao {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 @media (max-width: 575px) and (min-width:  426px) {
@@ -720,6 +773,20 @@ main {
         font-size: 0.8em;
     }
 
+    .fa-exclamation-triangle {
+        font-size: 1.9em;
+        top: 8px;
+    }
+
+    .imagem-medidas-protecao {
+        height: 465px;
+        margin-top: 10px;
+    }
+
+    .titulo-medidas-protecao {
+        font-size: 1.5em;
+    }
+
 }
 
 @media (max-width: 767px) and (min-width: 576px) {
@@ -779,13 +846,18 @@ main {
     }
 
     .card-sintomas {
-        width: 450px;
-        height: 180px;
+        width: 420px;
+        height: auto;
         margin-top: unset !important;
     }
 
     .link-prevencao {
         padding-left: 50px;
+    }
+
+    .imagem-medidas-protecao {
+        height: 490px;
+        margin-top: 20px;
     }
     
 }
@@ -849,6 +921,11 @@ main {
         width: 450px;
         height: 180px;
         margin-top: unset !important;
+    }
+
+    .imagem-medidas-protecao {
+        height: 550px;
+        margin-top: 20px;
     }
 }
 
@@ -917,6 +994,11 @@ main {
     .list-group-item {
         padding: 18px 24px 18px 24px !important; 
     }
+
+    .imagem-medidas-protecao {
+        height: 365px;
+        margin-top: 100px;
+    }
 }
 
 @media (min-width: 1201px) {
@@ -932,7 +1014,7 @@ main {
     .imagem-sintomas-home {
         position: absolute;
         top: 35px;
-        right: -45px;
+        right: -30px;
         height: 540px;
     }
 
