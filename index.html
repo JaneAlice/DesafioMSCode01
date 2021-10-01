@@ -19,24 +19,26 @@
     </head>
     <body>
 
-        <header class="position-relative">
+        <header class="position-relative" id="header">
             <div class="bg-light mb-5 mb-lg-0">
                 <div class="container container-mobile">
                     <div class="row padding-menu">
                         <div class="col-lg-2 col-md-6 col-6">
-                            <img class="imagem-logo" src="http://demo.themenio.com/kovid19/images/logo-dark.png"/>
+                            <a href="#header">
+                                <img class="imagem-logo" src="http://demo.themenio.com/kovid19/images/logo-dark.png"/>
+                            </a>
                         </div>
                         <div class="col-lg-10 col-md-6 col-6 text-lg-right">
                             <div class="menu-monitor">
                                 <a href="#" class="link-menu">Home</a>
                                 <a href="#section-about" class="link-menu">About Corona</a>
-                                <a href="#" class="link-menu">Symptoms</a>
-                                <a href="#" class="link-menu">Prevention</a>
-                                <a href="#" class="link-menu">Treatment</a>
+                                <a href="#section-symptoms" class="link-menu">Symptoms</a>
+                                <a href="#section-prevention" class="link-menu">Prevention</a>
+                                <a href="#section-treatment" class="link-menu">Treatment</a>
                                 <a href="#" class="link-menu">FAQ</a>
-                                <a href="#" class="link-menu">News</a>
+                                <a href="#section-news" class="link-menu">News</a>
                                 <a href="#" class="link-menu">More</a>
-                                <a>
+                                <a href="#section-protect">
                                     <button class="btn btn-header" type="submit">Do & Don’t</button>
                                 </a>
                             </div>
@@ -64,7 +66,7 @@
                                 <p class="cor-descricao">The Coronavirus (COVID-19) was first reported in Wuhan, Hubei, China in December 2019, the outbreak was later recognized as a pandemic by the World Health Organization (WHO) on 11 March 2020.</p>
                                 <div class="row">
                                     <div class="col-lg-5 col-md-4 col-sm-5 col-6 text-left">
-                                        <a class="text-white">
+                                        <a href="#section-protect" class="text-white">
                                             <button class="btn btn-home" type="submit">
                                                 <b>How to Protect</b>
                                                 <i class="fas fa-shield-alt ml-2"></i>
@@ -111,13 +113,13 @@
                 <div class="bg-white links-menu-mobile position-relative">
                     <p><a href="#" class="link-menu">Home</a></p>
                     <p><a href="#section-about" class="link-menu">About Corona</a></p>
-                    <p><a href="#" class="link-menu">Symptoms</a></p>
-                    <p><a href="#" class="link-menu">Prevention</a></p>
-                    <p><a href="#" class="link-menu">Treatment</a></p>
+                    <p><a href="#section-symptoms" class="link-menu">Symptoms</a></p>
+                    <p><a href="#section-prevention" class="link-menu">Prevention</a></p>
+                    <p><a href="#section-treatment" class="link-menu">Treatment</a></p>
                     <p><a href="#" class="link-menu">FAQ</a></p>
-                    <p><a href="#" class="link-menu">News</a></p>
+                    <p><a href="#section-news" class="link-menu">News</a></p>
                     <p><a href="#" class="link-menu">More</a></p>
-                    <a>
+                    <a href="#section-protect">
                         <button class="btn btn-header" type="submit">Do & Don’t</button>
                     </a>
                 </div>
@@ -155,7 +157,7 @@
                                     <h4 class="titulo-card-about text-left"><b>What you need to know</b></h4>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="#" class="decoration-none">
+                                    <a href="#section-transmission" class="decoration-none">
                                         <div class="row">
                                             <div class="col-10 text-left texto-card-about">
                                                 How coronavirus is spread
@@ -167,7 +169,7 @@
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="#" class="decoration-none">
+                                    <a href="#section-symptoms" class="decoration-none">
                                         <div class="row">
                                             <div class="col-10 text-left texto-card-about">
                                                 Symptoms of coronavirus
@@ -179,7 +181,7 @@
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="#" class="decoration-none">
+                                    <a href="#section-protect" class="decoration-none">
                                         <div class="row">
                                             <div class="col-10 text-left texto-card-about">
                                                 How to protect yourself
@@ -191,7 +193,7 @@
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="#" class="decoration-none">
+                                    <a href="#section-treatment" class="decoration-none">
                                         <div class="row">
                                             <div class="col-10 text-left texto-card-about">
                                                 Treatment for coronavirus
@@ -376,7 +378,7 @@
                 </div>
                 <div class="row pb-5">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-lg-right text-md-right text-sm-right text-center">
-                        <a class="text-white">
+                        <a href="#div-hands" class="text-white">
                             <button class="btn btn-prevencao-azul" type="submit">
                                 <b>Check how you wash hand</b>
                                 <i class="fas fa-arrow-right ml-2"></i>
@@ -420,7 +422,7 @@
                             <p class="ml-3 text-relative">
                                 <i class="fas fa-check-circle check-prevencao"></i>
                                 <b>Stay informed about the local COVID-19 situation</b> – Get up-to-date information about local COVID-19 activity from
-                                <a href="#" class="border-bottom">
+                                <a href="#header" class="border-bottom">
                                     public health officials.
                                 </a>
                             </p> 
@@ -435,7 +437,7 @@
                     </div>
                 </div>
 
-                <div class="row mt-5 pt-5 mb-4">
+                <div class="row mt-5 pt-5 mb-4" id="div-hands">
                     <div class="text-center pb-lg-1 col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0 col-8 offset-2">
                         <h4 class="titulo-medidas-prevencao mb-3"><b>Follow steps to wash hands</b></h4>
                         <a  class="text-primary decoration-none link-prevencao mt" style="padding-left: unset !important;">
@@ -604,7 +606,7 @@
             </div>            
         </section>
 
-        <section class="bg-light pb-5" id="section-update">
+        <section class="bg-light pb-5" id="section-news">
             <div class="container container-mobile">
                 <div class="row">
                     <div class="text-center pb-lg-1 col-lg-8 offset-lg-2 col-md-10 offset-md-1 mb-lg-5">
@@ -613,28 +615,28 @@
                     </div>
 
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="card card-update">
+                        <div class="card card-news">
                             <img class="card-img-top rounded" src="http://demo.themenio.com/kovid19/images/blog/blog-a.jpg" alt="Card image cap"/>
                             <div class="mt-4 text-center descricao-sections">
-                                <a href="#" class="link-card-update">Caring for someone at home</a>
+                                <a href="#" class="link-card-news">Caring for someone at home</a>
                                 <p class="mt-3">Most people who get sick with COVID-19 will have only mild illness and should recover at home. Care at home can help stop the spread of COVID-19</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="card card-update">
+                        <div class="card card-news">
                             <img class="card-img-top rounded" src="http://demo.themenio.com/kovid19/images/blog/blog-b.jpg" alt="Card image cap"/>
                             <div class="mt-4 text-center descricao-sections">
-                                <a href="#" class="link-card-update">15 ways to keep safe and healthy</a>
+                                <a href="#" class="link-card-news">15 ways to keep safe and healthy</a>
                                 <p class="mt-3">Most people who get sick with COVID-19 will have only mild illness and should recover at home. Care at home can help stop the spread of COVID-19</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="card card-update">
+                        <div class="card card-news">
                             <img class="card-img-top rounded" src="http://demo.themenio.com/kovid19/images/blog/blog-c.jpg" alt="Card image cap"/>
                             <div class="mt-4 text-center descricao-sections">
-                                <a href="#" class="link-card-update">If You Think You Are Sick</a>
+                                <a href="#" class="link-card-news">If You Think You Are Sick</a>
                                 <p class="mt-3">If you are sick with COVID-19 or think you might have it, follow the steps below to help protect other people in your home and community</p>
                             </div>
                         </div>
@@ -648,7 +650,9 @@
                 <div class="container container mobile mt-4">
                     <div class="row">
                         <div class="col-lg-3 col-md-9 col-sm-9 col-12 col-9 text-left mb-md-5 mb-sm-5">
-                            <img height="40px" src="http://demo.themenio.com/kovid19/images/logo-white2x.png"/>
+                            <a href="#header">
+                                <img height="40px" src="http://demo.themenio.com/kovid19/images/logo-white2x.png"/>
+                            </a>
                             <div class="texto-footer mt-4">
                                 <p>This website is for health information and advice about coronavirus (COVID-19), how to prevent and protect yourself from disease.</p>
                                 <p>Learn about the government response to coronavirus on GOV.UK.</p>
@@ -669,29 +673,29 @@
                         <div class="col-lg-2 col-md-4 col-sm-4 offset-lg-2">
                             <h6 class="text-white titulo-footer mb-3">QUICK LINK</h6>
                             <div style="line-height: 30px;">
-                                <a class="link-footer" href="#">Symptoms</a> <br>
-                                <a class="link-footer" href="#">Prevention</a> <br>
-                                <a class="link-footer" href="#">Protect Youself</a> <br>
-                                <a class="link-footer" href="#">FAQs</a> <br>
-                                <a class="link-footer" href="#">About Corona</a>
+                                <a href="#section-symptoms" class="link-footer" href="#">Symptoms</a> <br>
+                                <a href="#section-prevention" class="link-footer" href="#">Prevention</a> <br>
+                                <a href="#section-protect" class="link-footer" href="#">Protect Youself</a> <br>
+                                <a href="#section-" class="link-footer" href="#">FAQs</a> <br>
+                                <a href="#section-about" class="link-footer" href="#">About Corona</a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-4">
                             <h6 class="text-white titulo-footer mb-3">HELPFULL LINK</h6>
                             <div style="line-height: 30px;">
-                                <a class="link-footer" href="#">Healthcare Professionals</a> <br>
-                                <a class="link-footer" href="#">Healthcare Facilities</a> <br>
-                                <a class="link-footer" href="#">Older Adults & Medical Conditions</a> <br>
-                                <a class="link-footer" href="#">Repare your Family</a>
+                                <a class="link-footer" href="#header">Healthcare Professionals</a> <br>
+                                <a class="link-footer" href="#header">Healthcare Facilities</a> <br>
+                                <a class="link-footer" href="#header">Older Adults & Medical Conditions</a> <br>
+                                <a class="link-footer" href="#header">Repare your Family</a>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-4">
                             <h6 class="text-white titulo-footer mb-3">IMPORTANT LINK</h6>
                             <div style="line-height: 30px;">
-                                <a class="link-footer" href="#">WHO Website</a> <br>
-                                <a class="link-footer" href="#">CDC Website</a> <br>
-                                <a class="link-footer" href="#">NHS Website</a> <br>
-                                <a class="link-footer" href="#">Harvard Health</a>
+                                <a class="link-footer" href="#header">WHO Website</a> <br>
+                                <a class="link-footer" href="#header">CDC Website</a> <br>
+                                <a class="link-footer" href="#header">NHS Website</a> <br>
+                                <a class="link-footer" href="#header">Harvard Health</a>
                             </div>
                         </div>
                     </div>
@@ -708,7 +712,7 @@
                             </p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 text-lg-right text-md-right text-left">
-                            <a class="link-footer" href="#">Privacy Policy</a>
+                            <a class="link-footer" href="#header">Privacy Policy</a>
                         </div>
                         <div class="col-12 mt-2">
                             <p class="texto-footer pr-texto-footer">

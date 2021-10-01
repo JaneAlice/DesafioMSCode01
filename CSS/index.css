@@ -225,7 +225,7 @@ main {
     font-size: 1em;
     text-decoration: none !important;
     padding-left: 24px;
-    color: #2a81ea;
+    color: #2a81ea !important;
 }
 
 .fa-arrow-right {
@@ -264,7 +264,7 @@ main {
     margin-right: auto;
 }
 
-.card-update {
+.card-news {
     border-radius: 3px;
     border: white;
     box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%); 
@@ -470,13 +470,13 @@ main {
     justify-content: flex-start;
 }
 
-.link-card-update {
+.link-card-news {
     color: #3d4b69;
     text-decoration: none !important;
     font-size: 1.16em !important;
     font-weight: 500;
 }
-.link-card-update:hover {
+.link-card-news:hover {
     color: #2a81ea;
 }
 
@@ -522,7 +522,7 @@ main {
 .link-footer {
     color: #b2bfe0;
     font-size: 0.89em;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .link-footer:hover {
@@ -1407,7 +1407,7 @@ main {
         display: block !important;
     }
     
-    .card-update {
+    .card-news {
         height: 410px;
         margin-top: unset;
     }
@@ -1516,7 +1516,7 @@ main {
         display: block !important;
     }
       
-    .card-update {
+    .card-news {
         margin-top: unset;
     }
 
