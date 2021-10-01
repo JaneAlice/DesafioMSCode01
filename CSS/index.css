@@ -196,7 +196,6 @@ main {
     font-size: 1.1em !important;
 }
 
-
 .titulo-sections {
     color: #50658e;
     font-family: 'Oswald', sans-serif;
@@ -481,6 +480,63 @@ main {
     color: #2a81ea;
 }
 
+.bg-footer {
+    background-color: #151c2e;
+}
+
+.bg-corona-footer {
+    background-image: url(http://demo.themenio.com/kovid19/assets/images/shape-c.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.texto-footer {
+    color: #b2bfe0;
+    font-size: 0.9em;
+}
+
+.icone-footer {
+    color: white;
+    background: #50658e;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 100%;
+    padding-top: 5px;
+    margin-right: 10px;
+    font-size: 0.85em;
+    cursor: pointer;
+}
+
+.icone-footer:hover {
+    background-color: #2a81ea;
+}
+
+.titulo-footer {
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.link-footer {
+    color: #b2bfe0;
+    font-size: 0.89em;
+    text-decoration: none;
+}
+
+.link-footer:hover {
+    color: #2a81ea;
+}
+
+.divisao-footer {
+    border-top: 1px solid rgba(247,248,255,0.1);
+    width: 100%;
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
 @media (max-width: 330px) {
 
     .btn-fechar-menu-mobile {
@@ -598,7 +654,6 @@ main {
         top: -30px;
     }
     
-    
     .fa-exclamation-triangle {
         font-size: 1.5em;
         top: 7px;
@@ -679,6 +734,10 @@ main {
 
     .check-protecao {
         left: 58%;
+    }
+
+    .titulo-footer {
+        margin-top: 40px;
     }
 }
 
@@ -798,7 +857,6 @@ main {
         right: 30px;
         top: -30px;
     }
-
     
     .fa-exclamation-triangle {
         font-size: 1.5em;
@@ -876,6 +934,14 @@ main {
         left: 58%;
     }
 
+    .bg-corona-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .titulo-footer {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 575px) and (min-width:  426px) {
@@ -956,7 +1022,6 @@ main {
     .descricao-about-1 {
         font-size: 1.18em;
     }
-
 
     .subtitulo-sections {
         font-size: 0.8em;
@@ -1057,6 +1122,15 @@ main {
     .check-protecao {
         left: 105px;
     }
+
+    .bg-corona-footer {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .titulo-footer {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 767px) and (min-width: 576px) {
@@ -1074,7 +1148,7 @@ main {
     .imagem-sintomas-home {
         position: unset !important;
         height: 340px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .pt-home{
@@ -1088,7 +1162,6 @@ main {
     .titulo-home{
         margin-right: -28px !important;
     }
-
 
     .subtitulo-sections {
         margin-top: 80px;
@@ -1135,7 +1208,6 @@ main {
         margin-top: -20px;
         margin-bottom: 40px;
     }
-    
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -1158,7 +1230,7 @@ main {
     .imagem-sintomas-home {
         position: unset !important;
         height: 340px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .pt-home{
@@ -1203,7 +1275,6 @@ main {
         height: 550px;
         margin-top: 20px;
     }
-
 
     .imagem-principal-protecao {
         height: 350px;
@@ -1340,6 +1411,11 @@ main {
         height: 410px;
         margin-top: unset;
     }
+
+    .divisao-footer {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 1201px) {
@@ -1442,5 +1518,14 @@ main {
       
     .card-update {
         margin-top: unset;
+    }
+
+    .divisao-footer {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .pr-texto-footer {
+        padding-right: 275px;
     }
 }
