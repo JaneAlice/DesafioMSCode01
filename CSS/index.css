@@ -7,6 +7,7 @@ main {
     height: 100%;
     position: absolute;
     top: 0px;
+    z-index: 10;
 }
 
 .btn-header {
@@ -278,6 +279,15 @@ main {
     margin-bottom: 35px;
 }
 
+.borda-link {
+    text-decoration: none !important;
+    border-bottom: 1px solid #2a81ea;
+}
+
+.borda-link:hover {
+    border-bottom: 0px solid ;
+}
+
 .borda-imagem-transmissao {
     border-bottom: 6px solid #9cc2f7;
     margin-top: -2px;
@@ -537,6 +547,61 @@ main {
     margin-bottom: 30px;
 }
 
+.link-faq {
+    text-decoration: none !important;
+    color: #50658e;
+    font-size: 1em;
+    border: 2px solid #e7e8ff;
+    padding: 13px 20px 13px 21px;
+    border-radius: 5px;
+}
+
+.link-faq:hover {
+    color: #2a81ea !important;
+    border: 2px solid #2a81ea !important;
+}
+
+.fa-angle-right {
+    padding-left: 55px;
+    color: #7eb3f2;
+}
+
+.fa-angle-right:hover {
+    color: #2a81ea;
+}
+
+.div-borda-perguntas {
+    border: 1px solid #e7e8ff;
+    border-radius: 3px;
+}
+
+.div-titulo-perguntas {
+    color: #2a81ea;
+    font-size: 1em !important;
+    padding: 30px 30px 24px 30px; 
+    position: relative;
+}
+
+.link-2-faq {
+    text-decoration: none !important;
+    color: #007bff;;
+}
+
+.link-2-faq:hover {
+    color: #50658e;
+}
+
+.div-texto-perguntas{
+    padding: 0px 30px 24px 30px;
+}
+
+.fa-minus {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #7eb3f2;
+}
+
 @media (max-width: 330px) {
 
     .btn-fechar-menu-mobile {
@@ -738,6 +803,15 @@ main {
 
     .titulo-footer {
         margin-top: 40px;
+    }
+
+    .link-faq {
+        font-size: 0.75em;
+        padding: 13px 8px 13px 8px;
+    }
+
+    .fa-angle-right {
+        padding-left: 40px;
     }
 }
 
@@ -942,6 +1016,15 @@ main {
     .titulo-footer {
         margin-top: 40px;
     }
+
+    .link-faq {
+        font-size: 0.8em;
+        padding: 13px 8px 13px 8px;
+    }
+
+    .fa-angle-right {
+        padding-left: 81px;
+    }
 }
 
 @media (max-width: 575px) and (min-width:  426px) {
@@ -1131,6 +1214,10 @@ main {
     .titulo-footer {
         margin-top: 40px;
     }
+
+    .fa-angle-right {
+        padding-left: 89px;
+    }
 }
 
 @media (max-width: 767px) and (min-width: 576px) {
@@ -1208,6 +1295,10 @@ main {
         margin-top: -20px;
         margin-bottom: 40px;
     }
+
+    .fa-angle-right {
+        padding-left: 215px;
+    }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -1280,6 +1371,10 @@ main {
         height: 350px;
         margin-top: -20px;
         margin-bottom: 40px;
+    }
+
+    .fa-angle-right {
+        padding-left: 395px;
     }
 }
 
@@ -1415,6 +1510,14 @@ main {
     .divisao-footer {
         margin-bottom: 30px;
         margin-top: 20px;
+    }
+
+    .fa-angle-right {
+        padding-left: 20px;
+    }
+    
+    .link-faq {
+        font-size: 0.9em;
     }
 }
 

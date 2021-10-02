@@ -1,4 +1,4 @@
-
+// Menu responsivo
 
 var menu_aberto_aberto = 0;
 
@@ -33,3 +33,16 @@ function fecharMenu(){
 	$('#btn_fechar_menu_mobile').removeClass('botao-menu-mobile-ativo');
 	menu_aberto_aberto = 0;
 }
+
+
+// Contador dos números da Home
+
+$({ Counter: 0 }).animate({
+	Counter: $('#contar').text()
+  }, {
+	duration: 1000,
+	easing: 'swing',
+	step: function() {
+	  $('.Single').text(Math.ceil(this.Counter));
+	}
+  });
