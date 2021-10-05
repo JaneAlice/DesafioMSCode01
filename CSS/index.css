@@ -609,7 +609,7 @@ main {
 
 .link-2-faq {
     text-decoration: none !important;
-    color: #007bff;;
+    color: #007bff;
 }
 
 .link-2-faq:hover {
@@ -627,6 +627,21 @@ main {
     color: #7eb3f2;
 }
 
+.display-none {
+    display: none;
+}
+
+.menu-fixed {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.pt-md-bg-corona {
+    padding-top: 110px;
+}
+
 @media (max-width: 330px) {
 
     .btn-fechar-menu-mobile {
@@ -637,7 +652,6 @@ main {
 
     .imagem-sintomas-home {
         position: unset !important;
-        height: 100%;
         width: 100%;
         margin-top: unset !important;
     }
@@ -648,7 +662,6 @@ main {
 
     .titulo-home {
         font-size: 3.45em;
-        margin-right: -28px;
     }
 
     .titulo-sm-vermelho {
@@ -869,7 +882,6 @@ main {
 
     .titulo-home {
         font-size: 3.45em;
-        margin-right: -28px;
     }
 
     .titulo-sm-vermelho {
@@ -1062,10 +1074,6 @@ main {
         height: 350px;
     }
 
-    .titulo-home {
-        margin-right: -28px;
-    }
-
     .container-mobile{
         max-width: 414px;
     }
@@ -1236,7 +1244,7 @@ main {
 @media (max-width: 767px) and (min-width: 576px) {
 
     .pt-md-bg-corona {
-        padding-top: 0px;
+        padding-top: 120px;
     }
 
     .btn-fechar-menu-mobile {
@@ -1257,10 +1265,6 @@ main {
 
     .bg-corona-home{
         height: 960px;
-    }
-
-    .titulo-home{
-        margin-right: -28px !important;
     }
 
     .subtitulo-sections {
@@ -1313,7 +1317,7 @@ main {
 @media (max-width: 991px) and (min-width: 768px) {
 
     .pt-md-bg-corona {
-        padding-top: 0px;
+        padding-top: 140px;
     }
 
     .btn-header {
@@ -1407,8 +1411,8 @@ main {
 
     .imagem-sintomas-home {
         position: absolute;
-        top: 72px;
-        right: -24px;
+        top: 60px;
+        right: -14px;
         height: 460px;
     }
 
@@ -1535,7 +1539,7 @@ main {
     .imagem-sintomas-home {
         position: absolute;
         top: 35px;
-        right: -30px;
+        right: -50px;
         height: 540px;
     }
 
