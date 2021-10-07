@@ -65,7 +65,7 @@ $(function() {
 
 // Scroll suave para links
 
-$('a').click(function (e){
+$('.link-scroll').click(function (e){
 	e.preventDefault();
 	var id = $(this).attr('href'),
 	    targetOffset = $(id).offset().top,
