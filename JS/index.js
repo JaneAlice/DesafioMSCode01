@@ -11,7 +11,7 @@ $('#btn_abrir_menu_mobile').on('click', function(e){
 		var player = target.animate([
 			{transform: 'translate(0,0)'},
 			{transform: 'translate(260px,0)'},
-		],400)
+		],500)
 		player.addEventListener('finish', function () {
 			target.style.transform = 'translate(260px,0)'
 		});
@@ -28,6 +28,15 @@ $('#btn_fechar_menu_mobile').on('click', function(e){
 		abrirMenu();
 	}else{
 		fecharMenu();
+
+		var target = document.querySelector('.menu-mobile-animado');
+		var player = target.animate([
+			{transform: 'translate(260px,0)'},
+			{transform: 'translate(0,0)'},
+		],300)
+		player.addEventListener('finish', function () {
+			target.style.transform = 'translate(0,0)'
+		});
 	}
     
 });
@@ -38,7 +47,7 @@ function abrirMenu(){
 }
 
 function fecharMenu(){
-	$('#menu_mobile').hide(600);
+	$('#menu_mobile').hide(500);
 	menu_aberto_aberto = 0;
 }
 
