@@ -10,6 +10,10 @@ main {
     z-index: 10;
 }
 
+header {
+    z-index: 1;
+}
+
 .btn-header {
     font-weight: bold;
     border-radius: 50px;
@@ -63,7 +67,7 @@ main {
     background-position: center;
     background-size: contain;
     height: 730px;
-    margin-top: -90px;
+    margin-top: -130px;
     background-repeat: no-repeat;
 }
 
@@ -194,7 +198,7 @@ main {
 }
 
 .subtitulo-sections {
-    margin-top: 90px;
+    margin-top: 60px;
     color: #2a81ea;
     letter-spacing: 1px;
     font-size: 1.1em;
@@ -601,10 +605,10 @@ main {
 }
 
 .div-titulo-perguntas {
-    color: #2a81ea;
+    color: #2a81ea;;
     font-size: 1em !important;
-    padding: 30px 30px 24px 30px; 
     position: relative;
+    padding: 5px 40px 0px 10px;
 }
 
 .link-2-faq {
@@ -613,18 +617,17 @@ main {
 }
 
 .link-2-faq:hover {
-    color: #50658e;
+    color: #1d5faf;
 }
 
 .div-texto-perguntas{
-    padding: 0px 30px 24px 30px;
+    padding: 0px 10px 0px 10px;
 }
 
-.fa-minus {
+.btn-link {
     position: absolute;
-    top: 30px;
-    right: 40px;
-    color: #7eb3f2;
+    top: 10px;
+    right: 20px;
 }
 
 .display-none {
@@ -635,11 +638,47 @@ main {
     position: fixed;
     z-index: 10;
     width: 100%;
+    padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.menu-fixed-animado {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    opacity: 100%;
+    background-color: white !important;
+    box-shadow: 0px 4px 35px 0px rgb(70 86 117 / 12%) !important; 
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .pt-md-bg-corona {
     padding-top: 110px;
+}
+
+.imagem-flutuate {
+    background-color: #f04e60;
+    border-radius: 100%;
+    padding: 20px;
+    position: fixed;
+    z-index: 11;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-mobile-animado {
+    left: -260px;
+}
+
+.card-header {
+    background-color: #f7fafe !important;
+}
+
+.fa-ellipsis-h {
+    color: #7eb3f2;
 }
 
 @media (max-width: 330px) {
@@ -657,7 +696,8 @@ main {
     }
 
     .d2-home {
-        height: 280px;
+        height: auto;
+        padding-bottom: 30px;
     }
 
     .titulo-home {
@@ -834,7 +874,6 @@ main {
     .fa-times-circle {
         right: 58%;
     }
-
     .check-protecao {
         left: 58%;
     }
@@ -877,7 +916,7 @@ main {
     }
 
     .d2-home {
-        height: 350px;
+        height: 285px;
     }
 
     .titulo-home {
@@ -1327,7 +1366,7 @@ main {
        
     .btn-fechar-menu-mobile {
         position: absolute;
-        right: 62px;
+        right: 29px;
         top: 32px;
     }
 
@@ -1385,6 +1424,10 @@ main {
         margin-top: -20px;
         margin-bottom: 40px;
     }
+
+    .imagem-flutuate {
+        display: block;
+    }
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
@@ -1402,7 +1445,7 @@ main {
     }
 
     .bg-corona-home{
-        margin-top: -120px;
+        margin-top: -160px;
     }
 
     .btn-abrir-menu-mobile {
@@ -1524,6 +1567,10 @@ main {
     .link-faq {
         font-size: 0.9em;
     }
+
+    .imagem-flutuate {
+        display: block;
+    }
 }
 
 @media (min-width: 1201px) {
@@ -1635,5 +1682,9 @@ main {
 
     .pr-texto-footer {
         padding-right: 275px;
+    }
+
+    .imagem-flutuate {
+        display: block;
     }
 }
