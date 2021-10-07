@@ -54,6 +54,19 @@ $(function() {
 	})
 });
 
+// Scroll suave para links
+
+$('a').click(function (e){
+	e.preventDefault();
+	var id = $(this).attr('href'),
+	    targetOffset = $(id).offset().top,
+        menuHeight = $('.menu-fixed').innerHeight();
+
+	$('html, body').animate({
+		scrollTop: targetOffset - menuHeight
+	}, 700);
+});
+
 // Contador de números
 
 $(".counter").each(function() {
@@ -75,7 +88,7 @@ $(".counter").each(function() {
   });
 });
 
-//
+// Cards da section "FAQ"
 
 $('#faq_um').on('click', function(){
 	$('#bloco_faq_um').show();
